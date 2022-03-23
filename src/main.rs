@@ -22,6 +22,7 @@ fn main() {
 //         print_it();
 //     }
     caralho();
+    caralho();
 //     interesting::hello();
 //     interesting::hello();
 //     interesting::hello();
