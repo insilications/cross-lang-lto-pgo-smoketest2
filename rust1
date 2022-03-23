@@ -77,8 +77,8 @@ first() {
   /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
   mkdir -p target/x86_64-unknown-linux-gnu/release/deps/
   cp -f ./libxyz.a target/x86_64-unknown-linux-gnu/release/deps/
-  cargo install -Zunstable-options -Znew-llvm-pass-manager=yes -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --no-track --force --profile release --target x86_64-unknown-linux-gnu --path . --root out/
-#   cargo rustc -Zunstable-options -Znew-llvm-pass-manager=yes -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu -- --emit llvm-bc
+  cargo install -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --no-track --force --profile release --target x86_64-unknown-linux-gnu --path . --root out/
+#   cargo rustc -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu -- --emit llvm-bc
 #     rustc --verbose $RUSTFLAGS_GENERATE -L. ./interesting.rs
 # #     rustc --verbose $RUSTFLAGS_GENERATE -L. --emit=llvm-ir -o ./rsmain1.ll ./main.rs
 #     rustc --verbose $RUSTFLAGS_GENERATE -L. -o ./rsmain ./main.rs
@@ -108,14 +108,14 @@ second() {
   /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
   mkdir -p target/x86_64-unknown-linux-gnu/release/deps/
   cp -f ./libxyz.a target/x86_64-unknown-linux-gnu/release/deps/
-  cargo install -Zunstable-options -Znew-llvm-pass-manager=yes -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --no-track --force --profile release --target x86_64-unknown-linux-gnu --path . --root out/
+  cargo install -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --no-track --force --profile release --target x86_64-unknown-linux-gnu --path . --root out/
 #   rustc --verbose $RUSTFLAGS_USE -L. ./interesting.rs
 # #     rustc --verbose $RUSTFLAGS_USE -L. --emit=llvm-ir -o ./rsmain2.ll ./main.rs
 #   rustc --verbose $RUSTFLAGS_USE -L. -o ./rsmain ./main.rs
   out/bin/rsmain
   exa --long --all --icons out/bin/rsmain
   ldd out/bin/rsmain
-#   cargo rustc -Zunstable-options -Znew-llvm-pass-manager=yes -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu  -- --emit llvm-bc
+#   cargo rustc -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu  -- --emit llvm-bc
 }
 
 case $1 in
