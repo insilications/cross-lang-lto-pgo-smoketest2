@@ -1,7 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-__attribute__((noinline)) uint32_t c_always_inlined() {
+uint32_t c_always_inlined() {
     return 4;
 }
 
