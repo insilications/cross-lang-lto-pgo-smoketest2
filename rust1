@@ -119,7 +119,7 @@ second() {
   out/bin/rsmain
   exa --long --all --icons out/bin/rsmain
   ldd out/bin/rsmain
-  cargo rustc -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu --all-features -- --emit llvm-bc
+#   cargo rustc -Zunstable-options -Zhost-config -Ztarget-applies-to-host --jobs 16 -vv --offline --locked --profile release --target x86_64-unknown-linux-gnu --all-features -- --emit llvm-bc
 }
 
 case $1 in
