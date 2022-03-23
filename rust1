@@ -51,26 +51,6 @@ clean() {
   rm /var/tmp/pgo/*.profraw || :
 }
 
-# first() {
-#     rm ./rsmain || :
-#     rm ./*.rmeta || :
-#     rm ./*.o || :
-#     rm -rf false/ || :
-#     rm ./libinteresting.rlib || :
-#     rm libxyz.a || :
-#     rm clib.o || :
-#     rm /var/tmp/pgo/rustprofile.profdata || :
-#     rm /var/tmp/pgo/*.profraw || :
-#     /usr/bin/clang ./clib.c $CFLAGS_GENERATE -c -o ./clib.o
-#     /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
-#     rustc --verbose $RUSTFLAGS_GENERATE -L. ./interesting.rs
-# #     rustc --verbose $RUSTFLAGS_GENERATE -L. --emit=llvm-ir -o ./rsmain1.ll ./main.rs
-#     rustc --verbose $RUSTFLAGS_GENERATE -L. -o ./rsmain ./main.rs
-#     ./rsmain
-#     exa --long --all --icons ./rsmain
-#     ldd ./rsmain
-# }
-
 first() {
   export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS="${CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS_GENERATE}"
   export RUSTFLAGS="${RUSTFLAGS_GENERATE}"
