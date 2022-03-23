@@ -1,0 +1,17 @@
+[package]
+name = "rsmain"
+version = "1.0.0"
+edition = "2021"
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "rsmain"
+
+[workspace]
+members = [
+  "crates/interesting",
+]
+
+[dependencies]
+interesting = { version = "1.0.0", path = "crates/interesting" }
