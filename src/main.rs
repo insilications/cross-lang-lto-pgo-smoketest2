@@ -1,4 +1,4 @@
-// extern crate interesting;
+extern crate interesting;
 use core::ffi::c_void;
 
 #[link(name = "xyz", kind = "static")]
@@ -23,8 +23,8 @@ fn main() {
     }
     caralho();
     caralho();
-//     interesting::hello();
-//     interesting::hello();
-//     interesting::hello();
-//     interesting::hello();
+    interesting::hello();
+    interesting::hello();
+    interesting::hello();
+    interesting::hello();
 }
