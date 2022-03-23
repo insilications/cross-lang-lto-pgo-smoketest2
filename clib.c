@@ -5,7 +5,7 @@ __attribute__((noinline)) uint32_t c_always_inlined() {
 }
 
 __attribute__((noinline)) uint32_t c_never_inlined() {
-    return 4;
+    return 10;
 }
 
 // uint32_t c_never_inlined() {
