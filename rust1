@@ -18,7 +18,8 @@ export PCRE2_SYS_STATIC=1
 export OPENSSL_STATIC=yes
 export OPENSSL_LIB_DIR=/usr/lib64/
 export OPENSSL_INCLUDE_DIR=/usr/include/
-export LLVM_PROFILE_FILE="/var/tmp/pgo/code-%p-%m.profraw"
+# export LLVM_PROFILE_FILE="/var/tmp/pgo/code-%p-%m.profraw"
+unset LLVM_PROFILE_FILE
 ##
 # export PGO_GEN="-fprofile-generate=/var/tmp/pgo -fprofile-update=atomic -fprofile-arcs -ftest-coverage"
 export PGO_GEN="-fprofile-generate=/var/tmp/pgo -fprofile-update=atomic"
@@ -118,7 +119,7 @@ second() {
 #   /usr/bin/llvm-profdata merge -o /var/tmp/pgo/rustprofile.profdata /var/tmp/pgo/*.profraw || :
 #   /usr/lib64/rustlib/x86_64-unknown-linux-gnu/bin/llvm-profdata merge -o /var/tmp/pgo/rustprofile.profdata /var/tmp/pgo/*.profraw || :
   /usr/bin/llvm-profdata merge -output=/var/tmp/pgo/code.profdata /var/tmp/pgo/ || :
-  /usr/lib64/rustlib/x86_64-unknown-linux-gnu/bin/llvm-profdata merge -output=/var/tmp/pgo/code.profdata /var/tmp/pgo/ || :
+#   /usr/lib64/rustlib/x86_64-unknown-linux-gnu/bin/llvm-profdata merge -output=/var/tmp/pgo/code.profdata /var/tmp/pgo/ || :
   /usr/bin/clang ./clib.c $CFLAGS -c -o ./clib.o -v
   /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
   mkdir -p target/x86_64-unknown-linux-gnu/release/deps/
