@@ -55,6 +55,7 @@ first() {
   export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS="${CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS_GENERATE}"
   export RUSTFLAGS="${RUSTFLAGS_GENERATE}"
   export CARGO_HOST_RUSTFLAGS="${CARGO_HOST_RUSTFLAGS_GENERATE}"
+  export CFLAGS="${CFLAGS_GEN}"
   cargo clean || :
   rm out/bin/rsmain || :
   rm ./rsmain || :
@@ -66,7 +67,7 @@ first() {
   rm clib.o || :
   rm /var/tmp/pgo/rustprofile.profdata || :
   rm /var/tmp/pgo/*.profraw || :
-  /usr/bin/clang ./clib.c $CFLAGS_GENERATE -c -o ./clib.o
+  /usr/bin/clang ./clib.c $CFLAGS -c -o ./clib.o
   /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
   mkdir -p target/x86_64-unknown-linux-gnu/release/deps/
   cp -f ./libxyz.a target/x86_64-unknown-linux-gnu/release/deps/
@@ -84,6 +85,7 @@ second() {
   export CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS="${CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS_USE}"
   export RUSTFLAGS="${RUSTFLAGS_USE}"
   export CARGO_HOST_RUSTFLAGS="${CARGO_HOST_RUSTFLAGS_USE}"
+  export CFLAGS="${CFLAGS_GENERATE}"
   cargo clean || :
   rm out/bin/rsmain || :
   rm ./rsmain || :
@@ -94,7 +96,7 @@ second() {
   rm libxyz.a || :
   rm clib.o || :
   /usr/bin/llvm-profdata merge -o /var/tmp/pgo/rustprofile.profdata /var/tmp/pgo/*.profraw || :
-  /usr/bin/clang ./clib.c $CFLAGS_USE -c -o ./clib.o
+  /usr/bin/clang ./clib.c $CFLAGS -c -o ./clib.o
   /usr/bin/llvm-ar crus ./libxyz.a ./clib.o
   mkdir -p target/x86_64-unknown-linux-gnu/release/deps/
   cp -f ./libxyz.a target/x86_64-unknown-linux-gnu/release/deps/
