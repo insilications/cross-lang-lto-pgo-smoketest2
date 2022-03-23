@@ -11,5 +11,4 @@ fn main() {
         println!("blub: {}", c_always_inlined() + c_never_inlined());
     }
     interesting::hello();
-    interesting::hello();
 }

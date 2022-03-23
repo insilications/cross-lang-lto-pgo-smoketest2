@@ -1,5 +1,5 @@
-#![crate_name="interesting"]
-#![crate_type="rlib"]
+// #![crate_name="interesting"]
+// #![crate_type="rlib"]
 
 #[no_mangle]
 #[inline(never)]
