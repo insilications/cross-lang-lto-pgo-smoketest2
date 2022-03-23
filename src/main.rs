@@ -1,4 +1,4 @@
-extern crate interesting;
+// extern crate interesting;
 
 #[link(name = "xyz")]
 extern "C" {
@@ -10,8 +10,8 @@ fn main() {
     unsafe {
         println!("blub: {}", c_always_inlined() + c_never_inlined());
     }
-    interesting::hello();
-    interesting::hello();
-    interesting::hello();
-    interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
 }
