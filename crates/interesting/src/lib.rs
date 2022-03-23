@@ -4,5 +4,5 @@
 #[no_mangle]
 #[inline(never)]
 pub fn hello() {
-    println!("Hello Porra!");
+    println!("Hello Hello!");
 }
