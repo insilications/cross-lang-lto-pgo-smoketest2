@@ -2,3 +2,10 @@
 name = "interesting"
 version = "1.0.0"
 edition = "2021"
+
+[lib]
+name = "interesting"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+bench = false
+edition = "2021"

@@ -1,4 +1,4 @@
-extern crate interesting;
+// extern crate interesting;
 use core::ffi::c_void;
 
 #[link(name = "xyz", kind = "static")]
@@ -9,13 +9,14 @@ extern "C" {
 }
 
 #[no_mangle]
-#[inline(never)]
+// #[inline(never)]
 pub fn caralho() {
     println!("Hello Porra!");
 }
 
 
 fn main() {
+//     println!("cargo:rustc-link-lib=static=interesting");
     let x = unsafe { c_always_inlined() + c_never_inlined() };
     println!("blub: {}", x);
     unsafe {
@@ -23,8 +24,8 @@ fn main() {
     }
     caralho();
     caralho();
-    interesting::hello();
-    interesting::hello();
-    interesting::hello();
-    interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
+//     interesting::hello();
 }
