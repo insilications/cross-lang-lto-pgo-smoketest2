@@ -9,7 +9,6 @@ extern "C" {
 }
 
 #[no_mangle]
-// #[inline(never)]
 pub fn caralho() {
     println!("Hello Porra!");
 }
@@ -17,13 +16,15 @@ pub fn caralho() {
 
 fn main() {
 //     println!("cargo:rustc-link-lib=static=interesting");
-    let x = unsafe { c_always_inlined() + c_never_inlined() };
-    println!("blub: {}", x);
+
     unsafe {
-        print_it();
+        println!("blub: {}", c_always_inlined() + c_never_inlined());
     }
     caralho();
     caralho();
+    unsafe {
+        print_it();
+    }
 //     interesting::hello();
 //     interesting::hello();
 //     interesting::hello();
