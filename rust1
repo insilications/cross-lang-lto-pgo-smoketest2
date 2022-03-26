@@ -49,6 +49,8 @@ clean() {
   rm ./rsmain || :
   rm ./*.rmeta || :
   rm ./*.o || :
+  rm ./*.bc || :
+  rm ./*.i || :
   rm -rf false/ || :
   rm ./libinteresting.rlib || :
   rm ./libxyz.a || :
