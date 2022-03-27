@@ -2,7 +2,7 @@
 // #![crate_type="rlib"]
 
 #[no_mangle]
-#[inline(never)]
+// #[inline(never)]
 pub fn hello() {
     println!("Hello Hello!");
 }

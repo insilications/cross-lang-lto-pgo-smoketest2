@@ -1,0 +1,973 @@
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: './clib.c', Line: 4, Column: 0 }
+Function:        c_always_inlined
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: './clib.c', Line: 5, Column: 5 }
+Function:        c_always_inlined
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: './clib.c', Line: 4, Column: 0 }
+Function:        c_always_inlined
+Args:
+  - NumInstructions: '2'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: './clib.c', Line: 8, Column: 0 }
+Function:        c_never_inlined
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: './clib.c', Line: 9, Column: 5 }
+Function:        c_never_inlined
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: './clib.c', Line: 8, Column: 0 }
+Function:        c_never_inlined
+Args:
+  - NumInstructions: '2'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: './clib.c', Line: 12, Column: 0 }
+Function:        print_it
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: './clib.c', Line: 13, Column: 4 }
+Function:        print_it
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: './clib.c', Line: 12, Column: 0 }
+Function:        print_it
+Args:
+  - NumInstructions: '2'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/negdi2.c', 
+                   Line: 17, Column: 0 }
+Function:        __negdi2
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/negdi2.c', 
+                   Line: 0, Column: 0 }
+Function:        __negdi2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/negdi2.c', 
+                   Line: 17, Column: 0 }
+Function:        __negdi2
+Args:
+  - NumInstructions: '3'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/clzsi2.c', 
+                   Line: 19, Column: 1 }
+Function:        __clzsi2
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/clzsi2.c', 
+                   Line: 19, Column: 0 }
+Function:        __clzsi2
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/clzsi2.c', 
+                   Line: 0, Column: 0 }
+Function:        __clzsi2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '36'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/clzsi2.c', 
+                   Line: 19, Column: 0 }
+Function:        __clzsi2
+Args:
+  - NumInstructions: '36'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 15, Column: 1 }
+Function:        __extendhfsf2
+Args:
+  - NumVRCopies:     '1'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.000000e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 15, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 15, Column: 0 }
+Function:        __extendhfsf2
+Args:
+  - NumInstructions: '31'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 19, Column: 0 }
+Function:        __gnu_h2f_ieee
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __gnu_h2f_ieee
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/extendhfsf2.c', 
+                   Line: 19, Column: 0 }
+Function:        __gnu_h2f_ieee
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 15, Column: 1 }
+Function:        __truncsfhf2
+Args:
+  - NumVRCopies:     '8'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '2.515625e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 15, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '18'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '7'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 15, Column: 0 }
+Function:        __truncsfhf2
+Args:
+  - NumInstructions: '78'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 19, Column: 0 }
+Function:        __gnu_f2h_ieee
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __gnu_f2h_ieee
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncsfhf2.c', 
+                   Line: 19, Column: 0 }
+Function:        __gnu_f2h_ieee
+Args:
+  - NumInstructions: '1'
+  - String:          ' instructions in function'
+...
+--- !Missed
+Pass:            regalloc
+Name:            SpillReloadCopies
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 13, Column: 1 }
+Function:        __truncdfhf2
+Args:
+  - NumVRCopies:     '4'
+  - String:          ' virtual registers copies '
+  - TotalCopiesCost: '1.265625e+00'
+  - String:          ' total copies cost '
+  - String:          generated in function
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 13, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '9'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '4'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '5'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '20'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '6'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '1'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 0, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '8'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/truncdfhf2.c', 
+                   Line: 13, Column: 0 }
+Function:        __truncdfhf2
+Args:
+  - NumInstructions: '87'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdisf.c', 
+                   Line: 9, Column: 0 }
+Function:        __floatdisf
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdisf.c', 
+                   Line: 0, Column: 0 }
+Function:        __floatdisf
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '2'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdisf.c', 
+                   Line: 9, Column: 0 }
+Function:        __floatdisf
+Args:
+  - NumInstructions: '2'
+  - String:          ' instructions in function'
+...
+--- !Analysis
+Pass:            prologepilog
+Name:            StackSize
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdixf.c', 
+                   Line: 11, Column: 0 }
+Function:        __floatdixf
+Args:
+  - NumStackBytes:   '0'
+  - String:          ' stack bytes in function'
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionMix
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdixf.c', 
+                   Line: 0, Column: 0 }
+Function:        __floatdixf
+Args:
+  - String:          'BasicBlock: '
+  - BasicBlock:      ''
+  - String:          "\n"
+  - String:          ''
+  - String:          ': '
+  - INST_:           '3'
+  - String:          "\n"
+...
+--- !Analysis
+Pass:            asm-printer
+Name:            InstructionCount
+DebugLoc:        { File: 'build/BUILD/rust-nightly-x86_64-unknown-linux-gnu/rustc-nightly-src/src/llvm-project/compiler-rt/lib/builtins/x86_64/floatdixf.c', 
+                   Line: 11, Column: 0 }
+Function:        __floatdixf
+Args:
+  - NumInstructions: '3'
+  - String:          ' instructions in function'
+...

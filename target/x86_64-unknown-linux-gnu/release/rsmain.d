@@ -1,0 +1,1 @@
+/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/rsmain: /insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/crates/interesting/src/lib.rs /insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/src/main.rs

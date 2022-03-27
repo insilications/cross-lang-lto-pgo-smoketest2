@@ -1,0 +1,65 @@
+/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,caralho,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,c_always_inlined,l
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,c_never_inlined,l
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,print_it,l
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,main,plx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,hello,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,abort,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,rust_eh_personality,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,poll,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,__errno_location,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,open,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,signal,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,sigaction,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,sysconf,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_self,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_getattr_np,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_attr_getstack,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_attr_destroy,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,memchr,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,syscall,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_getspecific,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_setspecific,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_key_create,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_key_delete,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutex_trylock,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutex_unlock,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,sigaltstack,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,munmap,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,write,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutex_lock,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,mmap,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,mprotect,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,free,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutexattr_init,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutexattr_settype,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutex_init,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,pthread_mutexattr_destroy,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,memrchr,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,posix_memalign,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,malloc,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,realloc,lx
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,__cxa_thread_atexit_impl,
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/rsmain-677957e4a8b5338a.rsmain.19de4ef9-cgu.0.rcgu.o,__dso_handle,lx
+/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/libxyz.a(clib.o at 126)
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/libxyz.a(clib.o at 126),c_always_inlined,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/libxyz.a(clib.o at 126),c_never_inlined,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/libxyz.a(clib.o at 126),print_it,pl
+-r=/insilications/gstuff/stuff/things/build/git-clr/cross-lang-lto-pgo-smoketest2/target/x86_64-unknown-linux-gnu/release/deps/libxyz.a(clib.o at 126),puts,lx
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(negdi2.o at 3303540)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(negdi2.o at 3303540),__negdi2,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(clzsi2.o at 3137552)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(clzsi2.o at 3137552),__clzsi2,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(extendhfsf2.o at 3216480)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(extendhfsf2.o at 3216480),__extendhfsf2,pl
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(extendhfsf2.o at 3216480),__gnu_h2f_ieee,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(truncsfhf2.o at 3403572)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(truncsfhf2.o at 3403572),__truncsfhf2,pl
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(truncsfhf2.o at 3403572),__gnu_f2h_ieee,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(truncdfhf2.o at 3394556)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(truncdfhf2.o at 3394556),__truncdfhf2,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(floatdisf.o at 3231248)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(floatdisf.o at 3231248),__floatdisf,pl
+/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(floatdixf.o at 3235740)
+-r=/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-9656240e49d93179.rlib(floatdixf.o at 3235740),__floatdixf,pl

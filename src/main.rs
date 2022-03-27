@@ -1,4 +1,4 @@
-// extern crate interesting;
+extern crate interesting;
 use core::ffi::c_void;
 
 #[link(name = "xyz", kind = "static")]
@@ -25,8 +25,12 @@ fn main() {
     unsafe {
         print_it();
     }
-//     interesting::hello();
-//     interesting::hello();
-//     interesting::hello();
-//     interesting::hello();
+    caralho();
+    caralho();
+    caralho();
+    caralho();
+    interesting::hello();
+    interesting::hello();
+    interesting::hello();
+    interesting::hello();
 }
